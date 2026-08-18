@@ -1,0 +1,19 @@
+{"timestamp":"00:00:00.886","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:05:46.972","source":"Server","level":"LOG","message":"✓ Compiled in 51ms"}
+{"timestamp":"00:06:39.012","source":"Server","level":"LOG","message":"✓ Compiled in 54ms"}
+{"timestamp":"00:22:29.316","source":"Server","level":"LOG","message":"✓ Compiled in 314ms"}
+{"timestamp":"00:22:29.827","source":"Server","level":"LOG","message":"✓ Compiled in 386ms"}
+{"timestamp":"00:22:49.762","source":"Server","level":"LOG","message":"✓ Compiled in 191ms"}
+{"timestamp":"00:23:10.291","source":"Server","level":"LOG","message":"✓ Compiled in 72ms"}
+{"timestamp":"00:25:28.118","source":"Server","level":"LOG","message":"✓ Compiled in 52ms"}
+{"timestamp":"00:25:28.252","source":"Server","level":"LOG","message":"✓ Compiled in 35ms"}
+{"timestamp":"00:26:00.203","source":"Server","level":"LOG","message":"✓ Compiled in 45ms"}
+{"timestamp":"00:28:10.681","source":"Browser","level":"WARN","message":"Image with src \"http://localhost:3000/attendance-erp-cover.png\" has \"fill\" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height."}
+{"timestamp":"00:28:10.722","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"http://localhost:3000/attendance-erp-cover.png\\\" has \\\"fill\\\" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.\\u001b[39m\""}
+{"timestamp":"00:28:12.867","source":"Browser","level":"WARN","message":"Image with src \"http://localhost:3000/hand-gesture-cover.png\" has \"fill\" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height."}
+{"timestamp":"00:28:12.878","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"http://localhost:3000/hand-gesture-cover.png\\\" has \\\"fill\\\" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.\\u001b[39m\""}
+{"timestamp":"00:28:12.878","source":"Browser","level":"WARN","message":"Image with src \"http://localhost:3000/retinal-diagnostics-cover.png\" has \"fill\" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height."}
+{"timestamp":"00:28:12.878","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"http://localhost:3000/retinal-diagnostics-cover.png\\\" has \\\"fill\\\" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.\\u001b[39m\""}
+{"timestamp":"00:28:16.593","source":"Browser","level":"WARN","message":"Image with src \"http://localhost:3000/attendance-erp-cover.png\" has \"fill\" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height."}
+{"timestamp":"00:28:16.594","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"http://localhost:3000/attendance-erp-cover.png\\\" has \\\"fill\\\" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.\\u001b[39m\""}
+{"timestamp":"00:30:49.217","source":"Server","level":"LOG","message":"✓ Compiled in 113ms"}
