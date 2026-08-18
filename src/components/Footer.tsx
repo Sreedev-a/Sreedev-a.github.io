@@ -1,0 +1,2 @@
+import { Github, Linkedin, Mail } from "lucide-react"; import { portfolio as p } from "@/data/portfolio";
+export function Footer(){return <footer><div><b>Sreedev A</b><span>Designed &amp; built by Sreedev A</span></div><p>© 2026 Sreedev A · Built with Next.js</p><div className="social-row"><a href={p.socials.github} aria-label="GitHub"><Github/></a><a href={p.socials.linkedin} aria-label="LinkedIn"><Linkedin/></a><a href={`mailto:${p.person.email}`} aria-label="Email"><Mail/></a></div></footer>}

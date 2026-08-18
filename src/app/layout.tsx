@@ -1,0 +1,4 @@
+import type { Metadata, Viewport } from "next"; import "./globals.css";
+export const metadata:Metadata={metadataBase:new URL("https://sreedev-a.github.io"),title:"Sreedev A | AI/ML Engineer",description:"Portfolio of Sreedev A, an AI/ML Engineer building machine learning, computer vision and intelligent software systems.",icons:{icon:"/favicon.svg"},openGraph:{title:"Sreedev A | AI/ML Engineer",description:"Machine learning, computer vision and intelligent software systems.",url:"https://sreedev-a.github.io",siteName:"Sreedev A",type:"website"},robots:{index:true,follow:true}};
+export const viewport:Viewport={width:"device-width",initialScale:1,themeColor:"#07090c"};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body>{children}</body></html>}
