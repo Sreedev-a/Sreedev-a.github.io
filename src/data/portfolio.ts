@@ -50,13 +50,83 @@ export const portfolio = {
   },
 ],
   skills: {
-    "Languages": ["Python", "Java", "SQL", "C"],
-    "AI / Machine Learning": ["TensorFlow", "Keras", "scikit-learn", "CNN", "NLP", "SVM", "Random Forest", "XGBoost", "K-Means", "KNN", "PCA"],
-    "Computer Vision": ["OpenCV", "MediaPipe"],
-    "Data": ["NumPy", "Pandas", "Matplotlib", "SciPy"],
-    "Backend / Web": ["FastAPI", "Next.js", "React", "TypeScript", "Tailwind CSS"],
-    "Developer Tools": ["Git", "GitHub", "VS Code", "Jupyter", "Docker"],
-  },
+  "Programming": [
+    "Python",
+    "Java",
+    "SQL",
+    "C",
+    "TypeScript"
+  ],
+
+  "AI / Machine Learning": [
+    "Machine Learning",
+    "Deep Learning",
+    "TensorFlow",
+    "Keras",
+    "scikit-learn",
+    "NLP",
+    "Generative AI",
+    "LLMs",
+    "AI Agents"
+  ],
+
+  "Computer Vision": [
+    "OpenCV",
+    "MediaPipe",
+    "CNN",
+    "Image Processing",
+    "Object Detection",
+    "Face Detection"
+  ],
+
+  "Data Science": [
+    "NumPy",
+    "Pandas",
+    "Matplotlib",
+    "SciPy",
+    "PCA",
+    "K-Means",
+    "KNN",
+    "SVM",
+    "Random Forest",
+    "XGBoost"
+  ],
+
+  "Backend / Full Stack": [
+    "FastAPI",
+    "Flask",
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "REST APIs"
+  ],
+
+  "Databases": [
+    "PostgreSQL",
+    "MySQL",
+    "Firebase"
+  ],
+
+  "DevOps / Deployment": [
+    "Git",
+    "GitHub",
+    "Docker",
+    "GitHub Actions",
+    "Vercel",
+    "Cloudflare",
+    "Render"
+  ],
+
+  "Developer Tools": [
+    "VS Code",
+    "Jupyter",
+    "Android Studio",
+    "Postman",
+    "Linux",
+    "npm"
+  ],
+},
   interests: [
     { title: "Generative AI", text: "Building practical applications using modern language models." },
     { title: "Computer Vision", text: "Creating real-time intelligent visual systems." },
