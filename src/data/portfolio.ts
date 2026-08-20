@@ -8,11 +8,47 @@ export const portfolio = {
     { role: "AI & ML Intern", company: "Aerobosoft", period: "August 2023 – October 2023", points: ["Developed a kyphosis detection workflow using SVM, Random Forest and XGBoost.", "Prepared data pipelines and contributed to an NLP chatbot.", "Explored reinforcement-learning-based improvements."] },
   ],
   projects: [
-    { title: "AI-Proctored Assessment Platform", category: "AI • Computer Vision • Full Stack", description: "An intelligent assessment platform with adaptive questions, webcam proctoring, device and multiple-person detection, look-away monitoring, evidence capture, risk scoring, timed tests, and dedicated candidate and admin experiences.", tech: ["Next.js", "TypeScript", "FastAPI", "Python", "OpenCV"], repo: "" },
-    { title: "Cardiovascular Disease Detection from Retinal Images", category: "Deep Learning • Computer Vision", description: "CNN-based system for classifying cardiovascular disease indicators from retinal fundus images, covering preprocessing, training and performance evaluation.", tech: ["Python", "TensorFlow", "Keras", "OpenCV", "CNN"], repo: "" },
-    { title: "Real-Time Hand Gesture Recognition", category: "Computer Vision", description: "Real-time webcam gesture recognition using hand landmarks and machine-learning and deep-learning techniques.", tech: ["Python", "OpenCV", "MediaPipe", "TensorFlow"], repo: "" },
-    { title: "Attendance Register ERP", category: "Android • Firebase", description: "Android attendance management system with authentication, role-based access and real-time database integration.", tech: ["Android Studio", "Java / Kotlin", "XML", "Firebase"], repo: "" },
-  ],
+  {
+    title: "AI-Proctored Assessment Platform",
+    category: "AI • Computer Vision • Full Stack",
+    description:
+      "An intelligent assessment platform with adaptive questions, webcam proctoring, device and multiple-person detection, look-away monitoring, evidence capture, risk scoring, timed tests, and dedicated candidate and admin experiences.",
+    tech: ["Next.js", "TypeScript", "FastAPI", "Python", "OpenCV"],
+    image: "",
+    github: "",
+    demo: "",
+  },
+  {
+    title: "Cardiovascular Disease Detection from Retinal Images",
+    category: "Deep Learning • Computer Vision",
+    description:
+      "CNN-based system for classifying cardiovascular disease indicators from retinal fundus images, covering preprocessing, training and performance evaluation.",
+    tech: ["Python", "TensorFlow", "Keras", "OpenCV", "CNN"],
+    image: "",
+    github: "",
+    demo: "",
+  },
+  {
+    title: "Real-Time Hand Gesture Recognition",
+    category: "Computer Vision",
+    description:
+      "Real-time webcam gesture recognition using hand landmarks and machine-learning and deep-learning techniques.",
+    tech: ["Python", "OpenCV", "MediaPipe", "TensorFlow"],
+    image: "",
+    github: "",
+    demo: "",
+  },
+  {
+    title: "Attendance Register ERP",
+    category: "Android • Firebase",
+    description:
+      "Android attendance management system with authentication, role-based access and real-time database integration.",
+    tech: ["Android Studio", "Java / Kotlin", "XML", "Firebase"],
+    image: "",
+    github: "",
+    demo: "",
+  },
+],
   skills: {
     "Languages": ["Python", "Java", "SQL", "C"],
     "AI / Machine Learning": ["TensorFlow", "Keras", "scikit-learn", "CNN", "NLP", "SVM", "Random Forest", "XGBoost", "K-Means", "KNN", "PCA"],
