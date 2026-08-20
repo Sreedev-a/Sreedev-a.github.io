@@ -16,7 +16,7 @@ export const portfolio = {
     tech: ["Next.js", "TypeScript", "FastAPI", "Python", "OpenCV"],
     image: "/ai-proctoring-cover.png",
     github: "https://github.com/Sreedev-a/AI-Proctored-Assessment-Platform",
-    demo: "",
+    demo: "https://frontend-five-blond-42.vercel.app/login",
   },
   {
     title: "Cardiovascular Disease Detection from Retinal Images",
@@ -25,7 +25,7 @@ export const portfolio = {
       "CNN-based system for classifying cardiovascular disease indicators from retinal fundus images, covering preprocessing, training and performance evaluation.",
     tech: ["Python", "TensorFlow", "Keras", "OpenCV", "CNN"],
     image: "/retinal-diagnostics-cover.png",
-    github: "",
+    github: "https://github.com/Sreedev-a",
     demo: "",
   },
   {
@@ -35,7 +35,7 @@ export const portfolio = {
       "Real-time webcam gesture recognition using hand landmarks and machine-learning and deep-learning techniques.",
     tech: ["Python", "OpenCV", "MediaPipe", "TensorFlow"],
     image: "/hand-gesture-cover.png",
-    github: "",
+    github: "https://github.com/Sreedev-a",
     demo: "",
   },
   {
@@ -45,7 +45,7 @@ export const portfolio = {
       "Android attendance management system with authentication, role-based access and real-time database integration.",
     tech: ["Android Studio", "Java / Kotlin", "XML", "Firebase"],
     image: "/attendance-erp-cover.png",
-    github: "",
+    github: "https://github.com/Sreedev-a",
     demo: "",
   },
 ],
