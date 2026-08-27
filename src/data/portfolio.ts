@@ -3,10 +3,67 @@ export const portfolio = {
   socials: { github: "https://github.com/Sreedev-a", linkedin: "https://www.linkedin.com/in/sreedev514162/", resume: "/resume/Sreedev_A_Resume.pdf" },
   nav: ["Home", "About", "Experience", "Projects", "Skills", "Contact"],
   experience: [
-    { role: "AI/ML Engineer", company: "Meetmux", period: "January 2026 – Present", points: ["Developing AI/ML solutions and end-to-end machine-learning workflows.", "Integrating models into real-world applications and AI-powered product prototypes.", "Building with Python and modern AI technologies."] },
-    { role: "Machine Learning Intern", company: "Feyn Labs", period: "October 2024 – March 2025", points: ["Built Matchify, an NLP clustering project focused on market segmentation.", "Applied K-Means, KNN and PCA to machine-learning experiments.", "Developed AI product prototypes and explored time-series and finance use cases."] },
-    { role: "AI & ML Intern", company: "Aerobosoft", period: "August 2023 – October 2023", points: ["Developed a kyphosis detection workflow using SVM, Random Forest and XGBoost.", "Prepared data pipelines and contributed to an NLP chatbot.", "Explored reinforcement-learning-based improvements."] },
-  ],
+  {
+    role: "AI/ML Engineer Trainee",
+    company: "Meetmux",
+    period: "June 2026 – Present",
+    points: [
+      "Developing AI/ML solutions and end-to-end machine-learning workflows.",
+      "Integrating models into real-world applications and AI-powered product prototypes.",
+      "Building with Python and modern AI technologies.",
+    ],
+  },
+  {
+    role: "Data Analysis Intern",
+    company: "Cognifyz Technologies",
+    period: "March 2026 – May 2026",
+    points: [
+      "Worked on data analysis tasks and practical data-driven problem solving.",
+      "Applied analytical techniques to explore, process and interpret datasets.",
+      "Developed practical experience in data analysis workflows and tools.",
+    ],
+  },
+  {
+    role: "Cloud Engineering Intern",
+    company: "InternAge",
+    period: "February 2026 – May 2026",
+    points: [
+      "Gained practical experience in cloud engineering concepts and workflows.",
+      "Worked with cloud technologies and infrastructure-oriented development practices.",
+      "Developed hands-on understanding of cloud deployment and engineering workflows.",
+    ],
+  },
+  {
+    role: "Superintelligence & AI Intern",
+    company: "Chiac ASI",
+    period: "February 2026 – May 2026",
+    points: [
+      "Explored concepts and emerging approaches related to artificial intelligence and superintelligence.",
+      "Participated in a self-paced learning internship focused on preparing for the development of superintelligent systems.",
+      "Studied modern AI concepts and their potential applications and implications.",
+    ],
+  },
+  {
+    role: "Machine Learning Intern",
+    company: "Feyn Labs",
+    period: "October 2024 – March 2025",
+    points: [
+      "Built Matchify, an NLP clustering project focused on market segmentation.",
+      "Applied K-Means, KNN and PCA to machine-learning experiments.",
+      "Developed AI product prototypes and explored time-series and finance use cases.",
+    ],
+  },
+  {
+    role: "AI & ML Intern",
+    company: "Aerobosoft",
+    period: "August 2023 – October 2023",
+    points: [
+      "Developed a kyphosis detection workflow using SVM, Random Forest and XGBoost.",
+      "Prepared data pipelines and contributed to an NLP chatbot.",
+      "Explored reinforcement-learning-based improvements.",
+    ],
+  },
+],
   projects: [
   {
     title: "AI-Proctored Assessment Platform",
