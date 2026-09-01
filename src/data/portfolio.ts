@@ -190,5 +190,5 @@ export const portfolio = {
     { title: "AI Agents & Automation", text: "Combining AI models with tools and workflows." },
     { title: "MLOps", text: "Turning machine-learning experiments into reliable products." },
   ],
-  education: { degree: "B.Tech — Artificial Intelligence & Machine Learning", year: "2024", institution: "Institution name — add in src/data/portfolio.ts" },
+  education: { degree: "B.Tech — Artificial Intelligence & Machine Learning", year: "2024", institution: "Institution name — Visweswaraya Technological University" },
 } as const;
