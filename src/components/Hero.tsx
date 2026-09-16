@@ -29,18 +29,13 @@ export function Hero() {
       </div>
       <figure className={styles.portrait}>
         <Image
-          src="/avatar/sreedev-banner.webp"
-          alt="Sree Dev A at a laptop in an AI-themed workspace"
+          src="/avatar/sreedev-portrait.png"
+          alt="Portrait of Sreedev A"
           fill
           sizes="(max-width: 520px) calc(100vw - 40px), (max-width: 800px) 440px, 480px"
           preload
           className={styles.photo}
         />
-        <figcaption className={styles.caption}>
-          <span className={styles.captionLabel}>From ideas to impact</span>
-          <strong>{p.person.name}</strong>
-          <span>{p.person.approach}</span>
-        </figcaption>
       </figure>
       <a className="scroll" href="#about" aria-label="Scroll to About"><span>Scroll</span><ArrowDown size={16} /></a>
     </section>
