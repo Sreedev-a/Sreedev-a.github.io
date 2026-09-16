@@ -1,5 +1,14 @@
 export const portfolio = {
-  person: { name: "Sree Dev A", role: "AI/ML Engineer", location: "Bengaluru, India", email: "Sreedev514162@gmail.com", summary: "I build intelligent systems that combine machine learning, computer vision, automation and modern software engineering." },
+  person: {
+    name: "Sree Dev A",
+    role: "AI/ML Engineer",
+    location: "Bengaluru, India",
+    email: "Sreedev514162@gmail.com",
+    summary: "I build intelligent systems with machine learning, computer vision and generative AI, bringing ideas to life through full-stack development.",
+    focus: ["AI / ML", "Computer Vision", "Generative AI", "Full Stack"],
+    tagline: "Smarter systems. Happier people.",
+    approach: "Learn. Build. Solve. Improve. Repeat.",
+  },
   socials: { github: "https://github.com/Sreedev-a", linkedin: "https://www.linkedin.com/in/sreedev514162/", resume: "/resume/Sreedev_A_Resume.pdf" },
   nav: ["Home", "About", "Experience", "Projects", "Skills", "Contact"],
   experience: [
