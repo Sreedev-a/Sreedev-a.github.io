@@ -1,12 +1,154 @@
 import { ArrowUpRight, BrainCircuit, Code2, Github, GraduationCap, Linkedin, Mail, Sparkles } from "lucide-react";
 import { portfolio as p } from "@/data/portfolio";
-import { GlassCard } from "./GlassCard"; import { SectionHeading } from "./SectionHeading"; import { ProjectCard } from "./ProjectCard";
-export function PortfolioSections(){return <>
-<section className="section" id="about"><SectionHeading eyebrow="Profile" title="About Me"/><div className="about-grid"><div className="about-copy"><p>I&apos;m a B.Tech graduate in Artificial Intelligence and Machine Learning, currently working as an AI/ML Engineer. I focus on building practical systems across machine learning, computer vision, generative AI and automation.</p><p>I enjoy taking ideas from experiments to dependable software, combining model development with full-stack engineering. My goal is to build complete solutions that solve practical problems and make technology useful to people.</p></div><div className="stats"><GlassCard><BrainCircuit/><b>AI/ML Engineer</b><span>Building production-minded AI</span></GlassCard><GlassCard><Sparkles/><b>3+ Major AI Projects</b><span>Applied, end-to-end systems</span></GlassCard><GlassCard><Code2/><b>Python • ML • Vision</b><span>Core engineering toolkit</span></GlassCard></div></div></section>
-<section className="section" id="experience"><SectionHeading eyebrow="Career" title="Experience"/><div className="timeline">{p.experience.map((x,i)=><article key={x.company} className={`timeline-item ${i===0?"current":""}`}><span className="timeline-dot">{String(i+1).padStart(2,"0")}</span><GlassCard><div className="experience-top"><div><h3>{x.role}</h3><p>{x.company}</p></div><time>{x.period}</time></div><ul>{x.points.map(y=><li key={y}>{y}</li>)}</ul></GlassCard></article>)}</div></section>
-<section className="section" id="projects"><SectionHeading eyebrow="Portfolio" title="Selected Work" text="AI systems and software projects built around practical problems."/><div className="project-grid">{p.projects.map((project,index)=><ProjectCard key={project.title} project={project} index={index} variant={index===0?"featured":"standard"}/>)}</div></section>
-<section className="section" id="skills"><SectionHeading eyebrow="Toolkit" title="Tools & Technologies"/><div className="skills-grid">{Object.entries(p.skills).map(([k,v])=><GlassCard key={k}><h3>{k}</h3><div className="pills">{v.map(x=><span key={x}>{x}</span>)}</div></GlassCard>)}</div></section>
-<section className="section"><SectionHeading eyebrow="Current focus" title="What I&apos;m Exploring"/><div className="interests">{p.interests.map((x,i)=><GlassCard key={x.title}><span>0{i+1}</span><h3>{x.title}</h3><p>{x.text}</p></GlassCard>)}</div></section>
-<section className="section"><div className="split"><GlassCard className="github-card"><Github/><div><span className="eyebrow">Open Source & GitHub</span><h2>Ideas, experiments<br/>and work in progress.</h2><p>See what I&apos;m building, experimenting with and learning.</p><a className="button primary" href={p.socials.github} target="_blank">View GitHub <ArrowUpRight/></a></div></GlassCard><GlassCard className="education"><GraduationCap/><span className="eyebrow">Education</span><h3>{p.education.degree}</h3><p>{p.education.institution}</p><b>Class of {p.education.year}</b></GlassCard></div></section>
-<section className="section contact" id="contact"><span className="eyebrow">Let&apos;s connect</span><h2>Let&apos;s build something<br/><span>intelligent.</span></h2><p>I&apos;m always interested in AI/ML engineering opportunities, collaborations and interesting technical problems.</p><div className="hero-buttons"><a className="button primary" href={`mailto:${p.person.email}`}><Mail/>Email Me</a><a className="button" href={p.socials.linkedin} target="_blank"><Linkedin/>LinkedIn</a></div><small>{p.person.email} · {p.person.location}</small></section>
-</>}
+import { GlassCard } from "./GlassCard";
+import { SectionHeading } from "./SectionHeading";
+import { ProjectCard } from "./ProjectCard";
+
+export function PortfolioSections() {
+  return (
+    <>
+      <section className="section" id="about">
+        <SectionHeading eyebrow="Profile" title="About Me" />
+        <div className="about-grid">
+          <GlassCard className="about-copy-card">
+            <p>
+              I&apos;m a B.Tech graduate in Artificial Intelligence and Machine Learning,
+              currently working as an AI/ML Engineer. I focus on building practical systems
+              across machine learning, computer vision, generative AI and automation.
+            </p>
+            <p>
+              I enjoy taking ideas from experiments to dependable software, combining model
+              development with full-stack engineering. My goal is to build complete solutions
+              that solve practical problems and make technology useful to people.
+            </p>
+          </GlassCard>
+          <div className="stats">
+            <GlassCard>
+              <BrainCircuit />
+              <b>AI/ML Engineer</b>
+              <span>Building production-minded AI</span>
+            </GlassCard>
+            <GlassCard>
+              <Sparkles />
+              <b>3+ Major AI Projects</b>
+              <span>Applied, end-to-end systems</span>
+            </GlassCard>
+            <GlassCard>
+              <Code2 />
+              <b>Python • ML • Vision</b>
+              <span>Core engineering toolkit</span>
+            </GlassCard>
+          </div>
+        </div>
+      </section>
+
+      <section className="section" id="experience">
+        <SectionHeading eyebrow="Career" title="Experience" />
+        <div className="timeline">
+          {p.experience.map((x, i) => (
+            <article key={x.company} className={`timeline-item ${i === 0 ? "current" : ""}`}>
+              <span className="timeline-dot">{String(i + 1).padStart(2, "0")}</span>
+              <GlassCard>
+                <div className="experience-top">
+                  <div>
+                    <h3>{x.role}</h3>
+                    <p>{x.company}</p>
+                  </div>
+                  <time>{x.period}</time>
+                </div>
+                <ul>
+                  {x.points.map((y) => (
+                    <li key={y}>{y}</li>
+                  ))}
+                </ul>
+              </GlassCard>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="section" id="projects">
+        <SectionHeading
+          eyebrow="Portfolio"
+          title="Selected Work"
+          text="AI systems and software projects built around practical problems."
+        />
+        <div className="project-grid">
+          {p.projects.map((project, index) => (
+            <ProjectCard
+              key={project.title}
+              project={project}
+              index={index}
+              variant={index === 0 ? "featured" : "standard"}
+            />
+          ))}
+        </div>
+      </section>
+
+      <section className="section" id="skills">
+        <SectionHeading eyebrow="Toolkit" title="Tools & Technologies" />
+        <div className="skills-grid">
+          {Object.entries(p.skills).map(([k, v]) => (
+            <GlassCard key={k}>
+              <h3>{k}</h3>
+              <div className="pills">
+                {v.map((x) => (
+                  <span key={x}>{x}</span>
+                ))}
+              </div>
+            </GlassCard>
+          ))}
+        </div>
+      </section>
+
+      <section className="section">
+        <SectionHeading eyebrow="Current focus" title="What I&apos;m Exploring" />
+        <div className="interests">
+          {p.interests.map((x, i) => (
+            <GlassCard key={x.title}>
+              <span>0{i + 1}</span>
+              <h3>{x.title}</h3>
+              <p>{x.text}</p>
+            </GlassCard>
+          ))}
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="split">
+          <GlassCard className="github-card">
+            <Github />
+            <div>
+              <span className="eyebrow">Open Source & GitHub</span>
+              <h2>Ideas, experiments<br />and work in progress.</h2>
+              <p>See what I&apos;m building, experimenting with and learning.</p>
+              <a className="button primary" href={p.socials.github} target="_blank" rel="noopener noreferrer">
+                View GitHub <ArrowUpRight />
+              </a>
+            </div>
+          </GlassCard>
+          <GlassCard className="education">
+            <GraduationCap />
+            <span className="eyebrow">Education</span>
+            <h3>{p.education.degree}</h3>
+            <p>{p.education.institution}</p>
+            <b>Class of {p.education.year}</b>
+          </GlassCard>
+        </div>
+      </section>
+
+      <section className="section contact" id="contact">
+        <GlassCard className="contact-box">
+          <span className="eyebrow">Let&apos;s connect</span>
+          <h2>Let&apos;s build something<br /><span>intelligent.</span></h2>
+          <p>I&apos;m always interested in AI/ML engineering opportunities, collaborations and interesting technical problems.</p>
+          <div className="hero-buttons">
+            <a className="button primary" href={`mailto:${p.person.email}`}><Mail />Email Me</a>
+            <a className="button" href={p.socials.linkedin} target="_blank" rel="noopener noreferrer"><Linkedin />LinkedIn</a>
+          </div>
+          <small>{p.person.email} · {p.person.location}</small>
+        </GlassCard>
+      </section>
+    </>
+  );
+}

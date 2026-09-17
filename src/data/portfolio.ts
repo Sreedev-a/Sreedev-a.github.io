@@ -1,6 +1,6 @@
 export const portfolio = {
   person: {
-    name: "Sree Dev A",
+    name: "Sree Dev",
     role: "AI/ML Engineer",
     location: "Bengaluru, India",
     email: "Sreedev514162@gmail.com",
@@ -113,6 +113,36 @@ export const portfolio = {
     image: "/attendance-erp-cover.png",
     github: "https://github.com/Sreedev-a",
     demo: "",
+  },
+  {
+    title: "AI Operations Copilot",
+    category: "AI Agents • Autonomous Incident Diagnostics",
+    description:
+      "A production-style AI operations command center that investigates software incidents by planning diagnostic steps, calling allowlisted tools, ranking competing root-cause hypotheses, and producing structured postmortems with human-in-the-loop approval.",
+    tech: ["Python", "FastAPI", "Next.js", "TypeScript", "AI Agents", "Docker"],
+    image: "/ai-ops-copilot-cover.png",
+    github: "https://github.com/Sreedev-a/AI-Operations-Copilot",
+    demo: "",
+  },
+  {
+    title: "Human Atlas — 3D Anatomy Explorer",
+    category: "3D WebGL • Interactive Graphics",
+    description:
+      "An interactive, full-body 3D anatomy explorer rendering 2,200+ anatomical mesh elements from BodyParts3D with real-time exploded views, multi-system isolation, spatial camera presets, and search.",
+    tech: ["React", "Three.js", "TypeScript", "WebGL", "Tailwind CSS"],
+    image: "/human-atlas-cover.png",
+    github: "https://github.com/Sreedev-a/human-atlas",
+    demo: "https://human-atlas-kappa.vercel.app",
+  },
+  {
+    title: "MatchCraft — AI Resume Keyword Matcher",
+    category: "NLP • Machine Learning",
+    description:
+      "An intelligent NLP application that evaluates semantic similarity between resumes and job descriptions using TF-IDF, detects skill gaps from a curated vocabulary, and provides targeted optimization recommendations.",
+    tech: ["Python", "Streamlit", "scikit-learn", "NLP", "Pandas"],
+    image: "/matchcraft-cover.png",
+    github: "https://github.com/Sreedev-a/ai-resume-keyword-matcher",
+    demo: "https://ai-resume-keyword-matcher-sd.streamlit.app",
   },
 ],
   skills: {

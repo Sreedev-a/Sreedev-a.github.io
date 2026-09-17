@@ -1,11 +1,11 @@
-/* Mounted before the existing z-index: 0 decoration; foreground stays at 1+. */
+/* Fixed cosmic background canvas */
 .background {
   position: fixed;
   inset: 0;
   z-index: 0;
   overflow: hidden;
   pointer-events: none;
-  background: linear-gradient(155deg, #07090c 5%, #080c12 52%, #070a0f 100%);
+  background: radial-gradient(ellipse at 50% 15%, #0d121c 0%, #080b10 50%, #05070a 100%);
 }
 
 .background * {
@@ -13,38 +13,30 @@
 }
 
 .glowBlue,
+.glowCyan,
+.glowPurple {
+  position: absolute;
+  inset: -15%;
+  filter: blur(80px);
+  opacity: 0.65;
+  mix-blend-mode: screen;
+}
+
+.glowBlue {
+  background: radial-gradient(ellipse at 75% 20%, rgba(56, 189, 248, 0.08), transparent 55%);
+  animation: ambient-drift 80s ease-in-out infinite alternate;
+}
+
+.glowPurple {
+  background: radial-gradient(ellipse at 25% 65%, rgba(168, 85, 247, 0.06), transparent 50%);
+  animation: ambient-drift 95s ease-in-out infinite alternate-reverse;
+}
+
 .glowCyan {
-  position: absolute;
-  inset: -12%;
-  background: radial-gradient(ellipse at 78% 24%, rgba(65, 129, 197, .045), transparent 52%);
-  animation: ambient-drift 96s ease-in-out infinite alternate;
+  background: radial-gradient(ellipse at 50% 85%, rgba(45, 212, 191, 0.05), transparent 45%);
+  animation: ambient-drift 110s ease-in-out infinite alternate;
 }
 
-.glowCyan {
-  background: radial-gradient(ellipse at 16% 76%, rgba(53, 155, 177, .035), transparent 46%);
-  animation-duration: 123s;
-  animation-direction: alternate-reverse;
-}
-
-.gridDepth {
-  position: absolute;
-  inset: -80px;
-  transform: translateY(var(--background-parallax, 0px));
-  -webkit-mask-image: radial-gradient(ellipse at 65% 40%, #000, transparent 68%);
-  mask-image: radial-gradient(ellipse at 65% 40%, #000, transparent 68%);
-}
-
-.grid {
-  position: absolute;
-  inset: -144px;
-  background-image:
-    linear-gradient(rgba(88, 163, 194, .018) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(88, 163, 194, .018) 1px, transparent 1px);
-  background-size: 144px 144px;
-  animation: grid-drift 110s linear infinite;
-}
-
-/* A viewport-sized canvas stays behind every section without a document-sized bitmap. */
 .particles {
   position: absolute;
   inset: 0;
@@ -57,21 +49,14 @@
 }
 
 @keyframes ambient-drift {
-  from { transform: translate3d(-2%, 0, 0); }
-  to { transform: translate3d(3%, -3%, 0); }
-}
-
-@keyframes grid-drift {
-  from { transform: translate3d(0, 0, 0); }
-  to { transform: translate3d(144px, 144px, 0); }
+  from { transform: translate3d(-2%, 0, 0) scale(1); }
+  to { transform: translate3d(2%, -2%, 0) scale(1.04); }
 }
 
 @media (max-width: 767px) {
-  .grid { opacity: .65; }
-  .glowCyan { animation: none; }
+  .glowCyan { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .background * { animation: none; }
-  .gridDepth { transform: none; }
 }

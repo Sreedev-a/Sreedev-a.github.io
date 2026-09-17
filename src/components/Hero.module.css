@@ -5,6 +5,11 @@
 
 .copy { min-width: 0; }
 
+.heroGlass {
+  padding: 42px 46px;
+  border-radius: 34px;
+}
+
 .focus {
   display: flex;
   flex-wrap: wrap;
@@ -15,13 +20,15 @@
 }
 
 .focus li {
-  padding: 7px 10px;
-  border: 1px solid rgba(154, 216, 255, .14);
+  padding: 7px 11px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 9px;
-  background: rgba(154, 216, 255, .045);
-  color: #bdd6e6;
+  background: rgba(12, 18, 26, 0.35);
+  color: #c5d8ea;
   font-size: 11px;
   line-height: 1.4;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .portrait {
@@ -45,4 +52,5 @@
 @media (max-width: 800px) {
   .hero.hero { grid-template-columns: minmax(0, 1fr); gap: 38px; }
   .portrait { max-width: 440px; justify-self: center; }
+  .heroGlass { padding: 28px 22px; border-radius: 26px; }
 }
